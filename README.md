@@ -4,6 +4,13 @@ This is a sample of how to integrate libGDX (1.6.1) with Ruboto (1.3.0). The aim
 
 This project feeds into [Terrace](http://github.com/ashes999/terrace).
 
+# Running this sample
+
+- Edit `src/terrace_game.rb`. Change whatever you want (eg. background colour, sprite position)
+- Run `rake debug`
+- Deploy `bin/Libgdx-debug.apk` to your Android device/emulator.
+- Rejoice.
+
 # How this Repo was Made
 
 There are other repositories that demonstrate integration (not for Android), but which are now dead. Here's what we did to make this work:
