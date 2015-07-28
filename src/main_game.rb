@@ -6,6 +6,7 @@ java_import com.badlogic.gdx.graphics.g2d.SpriteBatch
 
 # Your main game class. If you change the class name, make sure you update
 # libgdx_activity.rb to specify the new game name.
+
 class MainGame < ApplicationAdapter
 	def create
 		@batch = SpriteBatch.new

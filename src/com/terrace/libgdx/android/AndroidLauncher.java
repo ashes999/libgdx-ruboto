@@ -17,6 +17,9 @@ public class AndroidLauncher extends AndroidApplication {
 			throw new RuntimeException("Game instance isn't set. Please assign an instance of ApplicationAdapter to LibgdxActivity.mainGame.");
 		}
 
+		/*AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
+		config.width = gameWidth;
+		config.height = gameHeight;*/
 		initialize(gameInstance, new AndroidApplicationConfiguration());
 	}
 }
