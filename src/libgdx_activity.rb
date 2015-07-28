@@ -2,7 +2,7 @@
 # in ruby_terrace_game.rb.
 
 require 'ruboto/widget'
-require 'terrace_game'
+require 'main_game'
 
 class LibgdxActivity
   def onCreate(bundle)
