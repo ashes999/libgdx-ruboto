@@ -8,7 +8,7 @@ class LibgdxActivity
   def onCreate(bundle)
     super
     # Can't instantiate Ruby class in Java, so create it here and pass it in
-    Java::ComTerraceLibgdx.LibgdxActivity.mainGame = TerraceGame.new
+    Java::ComTerraceLibgdx.LibgdxActivity.mainGame = MainGame.new
     start_ruboto_activity "AndroidLauncher", {
       :java_class => Java::ComTerraceLibgdxAndroid::AndroidLauncher
     }
