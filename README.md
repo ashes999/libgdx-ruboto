@@ -11,6 +11,14 @@ This project feeds into [Terrace](http://github.com/ashes999/terrace).
 - Deploy `bin/Libgdx-debug.apk` to your Android device/emulator.
 - Rejoice.
 
+# How this Repository Works
+
+LibGDX is an all-Java solution. Ruboto provides APK packaging and JRuby exection of code that can connect to Java code. Putting two and two together, we extract libGDX's core/main game class into Ruby code, and execute it, leaving the rest of the stack a Java stack.
+
+Specifically, the current libGDX project setup creates a `Core` module (which contains the common game, with the game logic in it), and separate per-platform launchers, such as `Desktop` and `Android`. These launchers are thin wrappers that just launch the core game logic, on their respective platforms.
+
+This repository contains, essentially, the `Android` platform launcher, with a Ruby game class from `Core`. We create the core class in Ruby code, then pass it to the Java side (through a static variable currently).
+
 # How this Repo was Made
 
 There are other repositories that demonstrate integration (not for Android), but which are now dead. Here's what we did to make this work:
