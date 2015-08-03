@@ -2,7 +2,7 @@
 
 This is a sample of how to integrate libGDX (1.6.1) with Ruboto (1.3.0). The aim is only to get things working, with as much code on the Java side as possible.
 
-This project feeds into [Terrace](http://github.com/ashes999/terrace).
+This project used to feed into [Terrace](http://github.com/ashes999/terrace), but branched off. (Terrace requires a shared/common repository structure, whereas this repository is intended to be standalone.)
 
 # Running this sample
 
